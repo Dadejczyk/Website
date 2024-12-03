@@ -1,0 +1,16 @@
+@media (max-width: 576px) {
+	.offert {
+		&__box {
+			grid-template-columns: 1fr !important; // Wymusza zastosowanie jednej kolumny
+		}
+	}
+	.contact {
+		&__box {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			width: 90%;
+			margin: 2em auto;
+		}
+	}
+}

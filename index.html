@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/885de26243.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3" id="navId">
+        <div class="container">
+            <a class="navbar-brand">RR<span class="highlight"> cars</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" href="#header">Strona Główna</a>
+                    <a class="nav-link" href="#offert">Oferta</a>
+                    <a class="nav-link" href="#aboutus">O nas</a>
+                    <a class="nav-link" href="#contact">Kontakt</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="header">
+        <h1 class="header__heading">Wypożyczalnia samochodów Warszawa</h1>
+        <p class="header__text">Nowa flota | wsparcie 24h | Otrzymujesz dokładnie ten samochód, który widzisz na zdjęciu
+        </p>
+        <button class="header__button">Zarezerwuj</button>
+    </header>
+
+
+    <section class="offert" id="offert">
+        <div class="offert__up">
+            <h3 class="offert__up--text">Wynajem samochodów osobowych Warszawa</h3>
+            <p class="offert__up--p">Wypożycz auto w RR Cars - odkryj nowe możliwości - podróżuj bez ograniczeń!</p>
+            <div class="offert__line"></div>
+        </div>
+        <h3 class="offert__heading">Oferta</h3>
+        <div class="offert__box">
+            <div class="offert__car offert__car--one">
+                <img src="./img/auto-2178926_1280.jpg" alt="">
+                <div class="offert__car--all">
+                    <h3 class="offert__car--heading">Klasa A</h3>
+                    <h4>Koszt</h4>
+                    <h6>1200zł -> 1500zł</h6>
+                    <p>doba</p>
+                </div>
+                <button class="offert__car--button">Sprawdź</button>
+            </div>
+            <div class="offert__car offert__car--two">
+                <img src="./img/mclaren-2855240_1920.jpg" alt="">
+                <div class="offert__car--all">
+                    <h3 class="offert__car--heading">Klasa B</h3>
+                    <h4>Koszt</h4>
+                    <h6>900zł -> 1200zł</h6>
+                    <p>doba</p>
+                </div>
+                <button class="offert__car--button">Sprawdź</button>
+            </div>
+            <div class="offert__car offert__car--three">
+                <img src="./img/lamborghini-4815237_1920.jpg" alt="">
+                <div class="offert__car--all">
+                    <h3 class="offert__car--heading">Klasa C</h3>
+                    <h4>Koszt</h4>
+                    <h6>500zł -> 900zł</h6>
+                    <p>doba</p>
+                </div>
+                <button class="offert__car--button">Sprawdź</button>
+            </div>
+            <div class="offert__car offert__car--four">
+                <img src="./img/bmw-6706660_1920.jpg" alt="">
+                <div class="offert__car--all">
+                    <h3 class="offert__car--heading">Klasa D</h3>
+                    <h4>Koszt</h4>
+                    <h6>200zł -> 500zł</h6>
+                    <p>doba</p>
+                </div>
+                <button class="offert__car--button">Sprawdź</button>
+            </div>
+        </div>
+    </section>
+    <section class="car1">
+        <div class="car1__img"></div>
+        <div class="car1__box">
+            <h2 class="car1__box--heading">Klasa Premium</h2>
+            <button class="car1__box--button">Sprawdź</button>
+        </div>
+    </section>
+    <section class="aboutus" id="aboutus">
+        <div class="aboutus__box">
+            <h2 class="aboutus__box--heading">Dlaczego my?</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam aperiam, voluptate debitis blanditiis
+                officiis est rem animi ipsam excepturi, delectus quisquam quia voluptatem libero suscipit provident
+                nostrum qui molestias aspernatur ipsa. Nostrum neque adipisci molestias unde rem tempore ea numquam
+                nesciunt ex, ad magni error nemo provident dolores soluta explicabo.
+            </p>
+            <div class="aboutus__voucher"></div>
+        </div>
+    </section>
+    <section class="car2">
+        <div class="car2__box">
+            <h2 class="car2__box--heading">Klasa Suv</h2>
+            <button class="car2__box--button">Sprawdź</button>
+        </div>
+        <div class="car2__box--img"></div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="contact__heading">Skontaktuj się z nami</div>
+        <div class="contact__box">
+            <input type="text" name="username" placeholder="Imię i nazwisko" class="contact__input">
+            <input type="email" name="email" placeholder="Adres e-mail" class="contact__input">
+            <input type="tel" name="phone" placeholder="Numer telefonu" class="contact__input">
+            <textarea name="message" placeholder="Wiadomość" class="contact__textarea"></textarea>
+            <button class="contact__send-button">Wyślij</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <div class="copyright">
+                <p>&copy; Bartłomiej Dadej b.dadej14@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./mode.js"></script>
+
+</body>
+
+</html>

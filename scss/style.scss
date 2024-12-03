@@ -1,0 +1,496 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+nav {
+	text-transform: uppercase;
+	transition: background-color 0.6s;
+	z-index: 100;
+	background-color: rgba(0, 0, 0);
+
+	.navbar-toggler {
+		padding: 10px 15px;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+	}
+
+	.nav-link,
+	.navbar-nav .show > .nav-link,
+	.navbar-brand,
+	.fa-bars {
+		color: white;
+	}
+
+	.nav-link:focus,
+	.nav-link:hover,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .show > .nav-link {
+		color: white;
+	}
+}
+.navbar-brand {
+	.highlight {
+		color: yellow;
+		// Kolor tylko dla części "cars"
+	}
+}
+
+.header {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center; // Wyśrodkowanie poziome
+	align-items: center; // Wyśrodkowanie pionowe
+	flex-direction: column;
+	text-align: center; // Wyśrodkowanie tekstu w elementach
+	background-image: url('/img/bmw-6706660_1920.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 2;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -1;
+	}
+
+	&__heading {
+		font-size: 50px;
+		z-index: 3;
+		font-weight: bold;
+		color: rgb(255, 255, 255);
+		margin: 0; // Usuń domyślne odstępy, jeśli są niepotrzebne
+	}
+
+	&__text {
+		z-index: 3;
+		font-size: 20px;
+		color: rgb(255, 255, 255);
+		margin: 10px;
+	}
+	&__button {
+		margin-top: 2em;
+		width: 200px;
+		height: 50px;
+		border-radius: 8px;
+		background: none;
+		color: yellow;
+		border: 1px solid yellow;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			width: 220px;
+			height: 60px;
+			color: black;
+			background-color: yellow;
+		}
+	}
+}
+
+.offert {
+	background-color: #383838;
+
+	&__heading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: yellow;
+		width: 100%;
+		height: 100px;
+	}
+	&__up {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		background-image: url('/img/bmw-6706660_1920.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 3;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.6);
+			z-index: -1;
+		}
+
+		&--text {
+			padding-top: 2em;
+			margin: 0;
+			z-index: 10;
+			font-size: 2em;
+			color: rgb(255, 255, 255);
+		}
+		&--p {
+			height: 120px;
+			width: 100%;
+			padding-top: 20px;
+			z-index: 2;
+			color: rgb(255, 255, 255);
+		}
+	}
+	&__box {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr); // 4 kolumny o równej szerokości
+		gap: 1em; // Odstępy między elementami
+		padding: 2em;
+	}
+
+	&__car {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		padding: 1em;
+		box-shadow: 0 4px 6px rgba(255, 255, 0, 0.5);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		background-image: url('/img/asia-4056942_1920.jpg');
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 2;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 10px;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.9);
+			z-index: -1;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			object-fit: cover;
+			margin-bottom: 1em;
+		}
+
+		&--heading {
+			font-size: 1.5rem;
+			margin-bottom: 0.5em;
+			color: #ffffff;
+			padding: 10px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		&--button {
+			padding: 0.5em 1em;
+			background-color: #f1c40f;
+			border: none;
+			color: white;
+			font-size: 1rem;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: #d38e00;
+			}
+		}
+
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+		}
+		&--all {
+			width: 100%;
+			border-radius: 10px;
+			border: 1px solid yellow;
+			margin-bottom: 20px;
+
+			h4 {
+				font-size: 1.5rem;
+				color: rgb(255, 255, 255);
+				text-transform: uppercase;
+			}
+			h6 {
+				font-size: 1.5rem;
+				color: rgb(255, 255, 255);
+				text-transform: uppercase;
+			}
+			p {
+				font-size: 1.5rem;
+				color: rgb(255, 255, 255);
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.car1 {
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('/img/20210630112726_S_class_rear_seat_space.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	z-index: 2;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&--heading {
+			font-size: 2.8rem;
+			color: white;
+			margin-bottom: 1rem; /* Dodano odstęp dla lepszej estetyki */
+		}
+
+		&--button {
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgba(0, 0, 0, 0.199);
+			border: 1px solid #f1c40f;
+			width: 200px;
+			height: 40px;
+			cursor: pointer;
+			z-index: 10;
+			transition: all 0.3s ease-in;
+			border-radius: 8px;
+			color: white;
+
+			&:hover {
+				background-color: #f1c40f;
+				transform: scale(1.25); /* Powiększenie przy hover */
+				color: black;
+			}
+		}
+	}
+}
+.car2 {
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('/img/tank-500-8896196_1920.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	z-index: 2;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&--heading {
+			font-size: 2.8rem;
+			color: white;
+			margin-bottom: 1rem; /* Dodano odstęp dla lepszej estetyki */
+		}
+
+		&--button {
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgba(0, 0, 0, 0.199);
+			border: 1px solid #f1c40f;
+			width: 200px;
+			height: 40px;
+			cursor: pointer;
+			z-index: 10;
+			transition: all 0.3s ease-in;
+			border-radius: 8px;
+			color: white;
+
+			&:hover {
+				background-color: #f1c40f;
+				transform: scale(1.25); /* Powiększenie przy hover */
+				color: black;
+			}
+		}
+	}
+}
+.aboutus {
+	position: relative;
+	height: 90vh;
+	width: 100%;
+	background-image: url('/img/carkeys-1024x576.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 2;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.9);
+		z-index: -1;
+	}
+	&__box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: white; // Kolor tekstu
+		text-align: center; // Wyśrodkowanie tekstu w poziomie
+		&--heading {
+			font-size: 2rem;
+			margin-top: 3em;
+		}
+	}
+	&__voucher {
+		position: absolute;
+		height: 400px;
+		width: 100%;
+		border-radius: 30px;
+
+		background-image: url('/img/edbde837-5faf-4112-a76a-893764ca0fb6.jpg');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		top: 350px;
+		margin: 0;
+	}
+}
+.contact {
+	width: 100%;
+	padding: 2em;
+	background-color: #504c25ce;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	&__heading {
+		padding-top: 20px;
+		font-size: 2.8rem;
+		color: rgb(0, 0, 0);
+	}
+	&__box {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		width: 50%;
+		margin: 2em auto;
+	}
+	&__input {
+		background-color: rgba(0, 0, 0, 0);
+		padding: 1em;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		font-size: 1rem;
+
+		width: 100%; /* Ustawienie szerokości na 100%, aby formularz był responsywny */
+		box-sizing: border-box; /* Uwzględnia padding przy obliczaniu szerokości */
+		&:focus {
+			outline: none;
+
+			border-color: #c4b323; /* Zmiana koloru obramowania po focu */
+		}
+	}
+	&__textarea {
+		padding: 1em;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		font-size: 1rem;
+		background-color: rgba(0, 0, 0, 0);
+		width: 100%; /* Ustawienie szerokości na 100%, aby formularz był responsywny */
+		box-sizing: border-box; /* Uwzględnia padding przy obliczaniu szerokości */
+
+		height: 150px; /* Określenie wysokości pola tekstowego */
+		resize: vertical; /* Pozwolenie na zmianę rozmiaru w pionie */
+		&:focus {
+			outline: none;
+			border-color: #c4b323; /* Zmiana koloru obramowania po focu */
+		}
+	}
+	&__send-button {
+		padding: 1em;
+		background-color: #f1c40f; /* Żółty kolor */
+		color: white;
+		border: none;
+		width: 30%;
+		border-radius: 8px;
+		font-size: 1.2rem;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		&:hover {
+			background-color: #d38e00; /* Zmiana koloru przy hover */
+		}
+
+		&:active {
+			background-color: #c77a00; /* Zmiana koloru przy kliknięciu */
+		}
+	}
+	&__input:focus,
+	&__textarea:focus {
+		outline: none;
+		border-color: #c4b323; /* Zmiana koloru obramowania po focu */
+	}
+
+	&__input::placeholder,
+	&__textarea::placeholder {
+		color: rgb(0, 0, 0);
+	}
+}
+
+footer {
+	background-color: #333;
+	text-align: center;
+	padding: 40px;
+}
+
+@import './small';
+@import './medium';
