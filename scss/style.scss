@@ -46,11 +46,14 @@ nav {
 	align-items: center; // Wyśrodkowanie pionowe
 	flex-direction: column;
 	text-align: center; // Wyśrodkowanie tekstu w elementach
-	background-image: url('/img/car-8907689_960_720.jpg');
+	// background-image: url('/img/car-8907689_960_720.jpg');
 	background-size: cover;
 	background-position: center;
 	position: relative;
 	z-index: 2;
+	img{
+		
+	}
 	&::after {
 		content: '';
 		position: absolute;
