@@ -42,7 +42,7 @@ nav .navbar-nav .show > .nav-link {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: url(../../assets/firstCar.jpg);
+  background-image: url("../assets/firstCar.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
