@@ -19,3 +19,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	window.addEventListener('scroll', addShadow);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+	const sections = document.querySelectorAll('.car1');
+
+	const observerOptions = {
+		root: null, 
+		threshold: 0.2, 
+	};
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('animate');
+				observer.unobserve(entry.target); 
+			}
+		});
+	}, observerOptions);
+
+	sections.forEach((section) => {
+		observer.observe(section); 
+	});
+});

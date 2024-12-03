@@ -34,7 +34,7 @@ nav {
 .navbar-brand {
 	.highlight {
 		color: yellow;
-		// Kolor tylko dla części "cars"
+		
 	}
 }
 
@@ -42,14 +42,15 @@ nav {
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	justify-content: center; // Wyśrodkowanie poziome
-	align-items: center; // Wyśrodkowanie pionowe
+	justify-content: center; 
+	align-items: center;
 	flex-direction: column;
-	text-align: center; // Wyśrodkowanie tekstu w elementach
+	text-align: center; 
 	background-image: url('../assets/firstCar.jpg');
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	animation: fadeInUp 1.5s ease-out forwards;
 	z-index: 2;
 	&::after {
 		content: '';
@@ -67,7 +68,8 @@ nav {
 		z-index: 3;
 		font-weight: bold;
 		color: rgb(255, 255, 255);
-		margin: 0; // Usuń domyślne odstępy, jeśli są niepotrzebne
+		margin: 0; 
+		animation: slideInFromLeft 1s ease-out forwards;
 	}
 
 	&__text {
@@ -75,6 +77,7 @@ nav {
 		font-size: 20px;
 		color: rgba(255, 255, 255);
 		margin: 10px;
+		animation: slideInFromRight 1.2s ease-out forwards;
 	}
 	&__button {
 		margin-top: 2em;
@@ -85,6 +88,7 @@ nav {
 		color: yellow;
 		border: 1px solid yellow;
 		transition: all 0.3s ease-in-out;
+		animation: bounceIn 1.5s ease-out forwards;
 		&:hover {
 			width: 220px;
 			height: 60px;
@@ -134,6 +138,7 @@ nav {
 			z-index: 10;
 			font-size: 2em;
 			color: rgb(255, 255, 255);
+			animation: bounceIn 1.5s ease-out forwards;
 		}
 		&--p {
 			height: 120px;
@@ -141,12 +146,13 @@ nav {
 			padding-top: 20px;
 			z-index: 2;
 			color: rgb(255, 255, 255);
+			animation: bounceIn 1.5s ease-out forwards;
 		}
 	}
 	&__box {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr); // 4 kolumny o równej szerokości
-		gap: 1em; // Odstępy między elementami
+		grid-template-columns: repeat(4, 1fr); 
+		gap: 1em;
 		padding: 2em;
 	}
 
@@ -165,6 +171,7 @@ nav {
 		background-position: center;
 		position: relative;
 		z-index: 2;
+		animation: bounceIn 1.5s ease-out forwards;
 		&::after {
 			content: '';
 			position: absolute;
@@ -238,7 +245,6 @@ nav {
 		}
 	}
 }
-
 .car1 {
 	width: 100%;
 	height: 70vh;
@@ -251,6 +257,14 @@ nav {
 	background-position: center;
 	position: relative;
 	z-index: 2;
+	opacity: 0; 
+	transform: translateY(50px); 
+	transition: all 0.8s ease-out; 
+
+	&.animate {
+		opacity: 1; // Widoczna
+		transform: translateY(0); 
+	}
 
 	&::before {
 		content: '';
@@ -272,7 +286,7 @@ nav {
 		&--heading {
 			font-size: 2.8rem;
 			color: white;
-			margin-bottom: 1rem; /* Dodano odstęp dla lepszej estetyki */
+			margin-bottom: 1rem; 
 		}
 
 		&--button {
@@ -292,7 +306,7 @@ nav {
 
 			&:hover {
 				background-color: #f1c40f;
-				transform: scale(1.25); /* Powiększenie przy hover */
+				transform: scale(1.25); 
 				color: black;
 			}
 		}
@@ -331,7 +345,7 @@ nav {
 		&--heading {
 			font-size: 2.8rem;
 			color: white;
-			margin-bottom: 1rem; /* Dodano odstęp dla lepszej estetyki */
+			margin-bottom: 1rem; 
 		}
 
 		&--button {
@@ -351,7 +365,7 @@ nav {
 
 			&:hover {
 				background-color: #f1c40f;
-				transform: scale(1.25); /* Powiększenie przy hover */
+				transform: scale(1.25);
 				color: black;
 			}
 		}
@@ -382,8 +396,8 @@ nav {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		color: white; // Kolor tekstu
-		text-align: center; // Wyśrodkowanie tekstu w poziomie
+		color: white;
+		text-align: center;
 		&--heading {
 			font-size: 2rem;
 			margin-top: 3em;
@@ -424,6 +438,7 @@ nav {
 		gap: 1em;
 		width: 50%;
 		margin: 2em auto;
+		
 	}
 	&__input {
 		background-color: rgba(0, 0, 0, 0);
@@ -432,12 +447,13 @@ nav {
 		border-radius: 8px;
 		font-size: 1rem;
 
-		width: 100%; /* Ustawienie szerokości na 100%, aby formularz był responsywny */
-		box-sizing: border-box; /* Uwzględnia padding przy obliczaniu szerokości */
+		width: 100%;
+		box-sizing: border-box;
+		animation: fadeInUp 1.5s ease-out forwards;
 		&:focus {
 			outline: none;
 
-			border-color: #c4b323; /* Zmiana koloru obramowania po focu */
+			border-color: #c4b323;
 		}
 	}
 	&__textarea {
@@ -446,19 +462,20 @@ nav {
 		border-radius: 8px;
 		font-size: 1rem;
 		background-color: rgba(0, 0, 0, 0);
-		width: 100%; /* Ustawienie szerokości na 100%, aby formularz był responsywny */
-		box-sizing: border-box; /* Uwzględnia padding przy obliczaniu szerokości */
+		width: 100%; 
+		box-sizing: border-box;
 
-		height: 150px; /* Określenie wysokości pola tekstowego */
-		resize: vertical; /* Pozwolenie na zmianę rozmiaru w pionie */
+		height: 150px; 
+		resize: vertical; 
+		animation: fadeInUp 1.5s ease-out forwards;
 		&:focus {
 			outline: none;
-			border-color: #c4b323; /* Zmiana koloru obramowania po focu */
+			border-color: #c4b323; 
 		}
 	}
 	&__send-button {
 		padding: 1em;
-		background-color: #f1c40f; /* Żółty kolor */
+		background-color: #f1c40f;
 		color: white;
 		border: none;
 		width: 30%;
@@ -467,17 +484,17 @@ nav {
 		cursor: pointer;
 		transition: background-color 0.3s ease;
 		&:hover {
-			background-color: #d38e00; /* Zmiana koloru przy hover */
+			background-color: #d38e00;
 		}
 
 		&:active {
-			background-color: #c77a00; /* Zmiana koloru przy kliknięciu */
+			background-color: #c77a00; 
 		}
 	}
 	&__input:focus,
 	&__textarea:focus {
 		outline: none;
-		border-color: #c4b323; /* Zmiana koloru obramowania po focu */
+		border-color: #c4b323; 
 	}
 
 	&__input::placeholder,
@@ -490,6 +507,53 @@ footer {
 	background-color: #333;
 	text-align: center;
 	padding: 40px;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInFromLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	from {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes bounceIn {
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 
 @import './small';
