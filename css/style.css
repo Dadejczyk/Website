@@ -42,7 +42,7 @@ nav .navbar-nav .show > .nav-link {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: url("/img/bmw-6706660_1920.jpg");
+  background-image: url("img/bmw-6706660_1920.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
