@@ -42,7 +42,7 @@ nav .navbar-nav .show > .nav-link {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: url("/assets/car-8907689_960_720.jpg");
+  background-image: url("assets/car-8907689_960_720.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -105,7 +105,7 @@ nav .navbar-nav .show > .nav-link {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: url("/assets/bmw-6706660_1920.jpg");
+  background-image: url("assets/bmw-6706660_1920.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ nav .navbar-nav .show > .nav-link {
   padding: 1em;
   box-shadow: 0 4px 6px rgba(255, 255, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-image: url("/assets/asia-4056942_1920.jpg");
+  background-image: url("assets/asia-4056942_1920.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -231,7 +231,7 @@ nav .navbar-nav .show > .nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/20210630112726_S_class_rear_seat_space.jpg");
+  background-image: url("assets/20210630112726_S_class_rear_seat_space.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -286,7 +286,7 @@ nav .navbar-nav .show > .nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/tank-500-8896196_1920.jpg");
+  background-image: url("assets/tank-500-8896196_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -339,7 +339,7 @@ nav .navbar-nav .show > .nav-link {
   position: relative;
   height: 90vh;
   width: 100%;
-  background-image: url("/assets/carkeys-1024x576.png");
+  background-image: url("assets/carkeys-1024x576.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -372,7 +372,7 @@ nav .navbar-nav .show > .nav-link {
   height: 400px;
   width: 100%;
   border-radius: 30px;
-  background-image: url("/assets/edbde837-5faf-4112-a76a-893764ca0fb6.jpg");
+  background-image: url("assets/edbde837-5faf-4112-a76a-893764ca0fb6.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
