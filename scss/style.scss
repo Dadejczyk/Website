@@ -34,7 +34,6 @@ nav {
 .navbar-brand {
 	.highlight {
 		color: yellow;
-		
 	}
 }
 
@@ -42,10 +41,10 @@ nav {
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	justify-content: center; 
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	text-align: center; 
+	text-align: center;
 	background-image: url('../assets/firstCar.jpg');
 	background-size: cover;
 	background-position: center;
@@ -68,7 +67,7 @@ nav {
 		z-index: 3;
 		font-weight: bold;
 		color: rgb(255, 255, 255);
-		margin: 0; 
+		margin: 0;
 		animation: slideInFromLeft 1s ease-out forwards;
 	}
 
@@ -151,7 +150,7 @@ nav {
 	}
 	&__box {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr); 
+		grid-template-columns: repeat(4, 1fr);
 		gap: 1em;
 		padding: 2em;
 	}
@@ -257,14 +256,8 @@ nav {
 	background-position: center;
 	position: relative;
 	z-index: 2;
-	opacity: 0; 
-	transform: translateY(50px); 
-	transition: all 0.8s ease-out; 
 
-	&.animate {
-		opacity: 1; // Widoczna
-		transform: translateY(0); 
-	}
+	transition: all 0.8s ease-out;
 
 	&::before {
 		content: '';
@@ -286,7 +279,8 @@ nav {
 		&--heading {
 			font-size: 2.8rem;
 			color: white;
-			margin-bottom: 1rem; 
+			margin-bottom: 1rem;
+			animation: fadeInUp 1.5s ease-out forwards;
 		}
 
 		&--button {
@@ -303,10 +297,10 @@ nav {
 			transition: all 0.3s ease-in;
 			border-radius: 8px;
 			color: white;
-
+			animation: fadeInUp 1.5s ease-out forwards;
 			&:hover {
 				background-color: #f1c40f;
-				transform: scale(1.25); 
+				transform: scale(1.25);
 				color: black;
 			}
 		}
@@ -345,7 +339,8 @@ nav {
 		&--heading {
 			font-size: 2.8rem;
 			color: white;
-			margin-bottom: 1rem; 
+			margin-bottom: 1rem;
+			animation: fadeInUp 1.5s ease-out forwards;
 		}
 
 		&--button {
@@ -362,7 +357,7 @@ nav {
 			transition: all 0.3s ease-in;
 			border-radius: 8px;
 			color: white;
-
+			animation: fadeInUp 1.5s ease-out forwards;
 			&:hover {
 				background-color: #f1c40f;
 				transform: scale(1.25);
@@ -399,6 +394,7 @@ nav {
 		color: white;
 		text-align: center;
 		&--heading {
+			animation: fadeInUp 1.5s ease-out forwards;
 			font-size: 2rem;
 			margin-top: 3em;
 		}
@@ -408,7 +404,7 @@ nav {
 		height: 400px;
 		width: 100%;
 		border-radius: 30px;
-
+		animation: fadeInUp 1.5s ease-out forwards;
 		background-image: url('../assets/edbde837-5faf-4112-a76a-893764ca0fb6.jpg');
 		background-size: contain;
 		background-position: center;
@@ -431,6 +427,7 @@ nav {
 		padding-top: 20px;
 		font-size: 2.8rem;
 		color: rgb(0, 0, 0);
+		animation: fadeInUp 1.5s ease-out forwards;
 	}
 	&__box {
 		display: flex;
@@ -438,7 +435,6 @@ nav {
 		gap: 1em;
 		width: 50%;
 		margin: 2em auto;
-		
 	}
 	&__input {
 		background-color: rgba(0, 0, 0, 0);
@@ -462,15 +458,15 @@ nav {
 		border-radius: 8px;
 		font-size: 1rem;
 		background-color: rgba(0, 0, 0, 0);
-		width: 100%; 
+		width: 100%;
 		box-sizing: border-box;
 
-		height: 150px; 
-		resize: vertical; 
+		height: 150px;
+		resize: vertical;
 		animation: fadeInUp 1.5s ease-out forwards;
 		&:focus {
 			outline: none;
-			border-color: #c4b323; 
+			border-color: #c4b323;
 		}
 	}
 	&__send-button {
@@ -488,13 +484,13 @@ nav {
 		}
 
 		&:active {
-			background-color: #c77a00; 
+			background-color: #c77a00;
 		}
 	}
 	&__input:focus,
 	&__textarea:focus {
 		outline: none;
-		border-color: #c4b323; 
+		border-color: #c4b323;
 	}
 
 	&__input::placeholder,

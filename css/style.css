@@ -243,13 +243,7 @@ nav .navbar-nav .show > .nav-link {
   background-position: center;
   position: relative;
   z-index: 2;
-  opacity: 0;
-  transform: translateY(50px);
   transition: all 0.8s ease-out;
-}
-.car1.animate {
-  opacity: 1;
-  transform: translateY(0);
 }
 .car1::before {
   content: "";
@@ -271,6 +265,7 @@ nav .navbar-nav .show > .nav-link {
   font-size: 2.8rem;
   color: white;
   margin-bottom: 1rem;
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 .car1__box--button {
   box-sizing: border-box;
@@ -286,6 +281,7 @@ nav .navbar-nav .show > .nav-link {
   transition: all 0.3s ease-in;
   border-radius: 8px;
   color: white;
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 .car1__box--button:hover {
   background-color: #f1c40f;
@@ -326,6 +322,7 @@ nav .navbar-nav .show > .nav-link {
   font-size: 2.8rem;
   color: white;
   margin-bottom: 1rem;
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 .car2__box--button {
   box-sizing: border-box;
@@ -341,6 +338,7 @@ nav .navbar-nav .show > .nav-link {
   transition: all 0.3s ease-in;
   border-radius: 8px;
   color: white;
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 .car2__box--button:hover {
   background-color: #f1c40f;
@@ -377,6 +375,7 @@ nav .navbar-nav .show > .nav-link {
   text-align: center;
 }
 .aboutus__box--heading {
+  animation: fadeInUp 1.5s ease-out forwards;
   font-size: 2rem;
   margin-top: 3em;
 }
@@ -385,6 +384,7 @@ nav .navbar-nav .show > .nav-link {
   height: 400px;
   width: 100%;
   border-radius: 30px;
+  animation: fadeInUp 1.5s ease-out forwards;
   background-image: url("../assets/edbde837-5faf-4112-a76a-893764ca0fb6.jpg");
   background-size: contain;
   background-position: center;
@@ -408,6 +408,7 @@ nav .navbar-nav .show > .nav-link {
   padding-top: 20px;
   font-size: 2.8rem;
   color: rgb(0, 0, 0);
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 .contact__box {
   display: flex;
